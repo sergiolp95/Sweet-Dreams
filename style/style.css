@@ -1,0 +1,140 @@
+body{ 
+    background-color: black; 
+}
+
+
+
+#usuario { transition: all .2s ease-in-out; }
+#usuario:hover{ transform: scale(1.1); }
+
+#invitado { transition: all .2s ease-in-out; }
+#invitado:hover{ transform: scale(1.1); }
+
+#btnEntrar { transition: all .2s ease-in-out; }
+#btnEntrar:hover{ transform: scale(1.05); }
+
+
+@font-face {
+    font-family: "LuckiestGuy";
+    src: url(../fonts/LuckiestGuy.ttf) format("truetype");
+}
+
+#registrate {
+    color: #FF7F00;
+    font-family: "LuckiestGuy";
+    font-size:19px;
+    margin-left: 20px;
+}
+
+#atras {
+    color: #8CE594;
+    font-family: "LuckiestGuy";
+    font-size:19px;
+    margin-left: 20px;}
+
+a:link {   
+ text-decoration:none;   
+}
+a:visited {
+color: #FF7F00
+}
+a:hover{
+    font-size:23px;
+}
+
+/************************LOGIN*******************************/
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+  font-family: "LuckiestGuy";
+}
+
+
+/* Reset top and bottom margins from certain elements */
+
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* The triangle form is achieved by a CSS hack */
+
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #7A416A;
+}
+
+.login-header {
+  background: #591244;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #7A416A;
+  padding: 12px;
+}
+
+
+/* Every row inside .login-container is defined with p tags */
+
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #000;
+  border-color: #7A416A;
+  color: #fff;
+}
+
+
+/* Text fields' focus effect */
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #fff;
+  box-shadow: #fff;
+}
+
+.login input[type="submit"] {
+  background: #591244;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #591244;
+}
+
+
+/* Buttons' focus effect */
+
+.login input[type="submit"]:focus {
+  border-color: #591244;
+}
+
