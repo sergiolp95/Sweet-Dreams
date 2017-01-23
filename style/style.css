@@ -1,52 +1,16 @@
-
-body {
-
-  /* Ubicación de la imagen */
-
-  background-image: url(../img/fontWeb.png);
-
- 
-
-  /* Nos aseguramos que la imagen de fondo este centrada vertical y
-
-    horizontalmente en todo momento */
-
-  background-position: center center;
-
- 
-
-  /* La imagen de fondo no se repite */
-
-  background-repeat: no-repeat;
-
- 
-
-  /* La imagen de fondo está fija en el viewport, de modo que no se mueva cuando
-
-     la altura del contenido supere la altura de la imagen. */
-
-  background-attachment: fixed;
-
- 
-
-  /* La imagen de fondo se reescala cuando se cambia el ancho de ventana
-
-     del navegador */
-
-  background-size: absolute;
-
- 
-
-  /* Fijamos un color de fondo para que se muestre mientras se está
-
-    cargando la imagen de fondo o si hay problemas para cargarla  */
-
-  background-color: #464646;
-
+#fondo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
+.logo{
+z-index: 5;
 
-
+}
 #usuario { transition: all .2s ease-in-out; }
 #usuario:hover{ transform: scale(1.1); }
 
@@ -67,13 +31,25 @@ body {
     font-family: "LuckiestGuy";
     font-size:19px;
     margin-left: 20px;
+    width: 180px;
+    height: 30px;
+/*    top: 875px;*/
+    bottom: 75px;
+    position: absolute;
+    z-index: 4;
 }
 
 #atras {
     color: #8CE594;
     font-family: "LuckiestGuy";
     font-size:19px;
-    margin-left: 20px;}
+    margin-left: 20px;
+    width: 150px;
+    height: 30px;
+    top: 20px;
+    position: absolute;
+    z-index: 4;
+}
 
 a:link {   
  text-decoration:none;   
@@ -182,3 +158,58 @@ a:hover{
 }
 
 /***************************Boton atras y registro ***************************/
+.button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #f7f7f7;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.button:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #f7f7f7;
+}
+.btn1:after {
+  left: 0;
+  bottom: auto;
+  top: -3px;
+  width: 100%;
+}
+.btn2:after {
+  height: 120%;
+  left: -10%;
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  z-index: -1;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:hover:after {
+  width: 100%;
+  left: 0;
+}
+.btn1:hover:after {
+  top: calc(100% - 3px);
+}
+.btn2:hover {
+  color: #5bcaff;
+}
+.btn2:hover:after {
+  left: -10%;
+  width: 120%;
+}
