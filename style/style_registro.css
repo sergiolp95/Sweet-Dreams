@@ -47,7 +47,7 @@ h1{
 
 	
 
-}
+} 
 
 ::-webkit-input-placeholder  /* para Chrome */{
 
@@ -81,14 +81,7 @@ h1{
 
 }
 
-p#texto{
-	text-align: center;
-	color: white;
-	font-family: "Luckiest Guy", cursive;
-	margin-top: 65px;
 
-
-}
 
 div#archivo{
 	position: relative;
