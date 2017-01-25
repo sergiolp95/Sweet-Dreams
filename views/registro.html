@@ -9,43 +9,37 @@ and open the template in the editor.
         <title>Registro</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../style/style_registro.css"/>
+        <link rel="icon" href="../img/favicon.png"  type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="../style/style.css"/>
         
     </head>
     <body>
      <img id="fondo" src="../img/fontWeb.png" alt="background image" />
-    <a href=""> 
-    <div id="atras">
-        <p><- Atras</p>
-    </div> 
-    </a>
-
+    <a href="../index.html">  
+          <div id="atras">
+                <div class="button btn2">Atrás</div>
+              </button>
+          </div> 
+        </a>
     <center>
-        <div>
-            
-            <h1>Registro</h1><br>
-            
-        </div>
         <div id="archivo" class="foto">
-        <img src="../img/foto_pre.png" style="width:150px;height:150px;">
-            
-            
-            <input id="foto" type="file" name="foto"><br><br>
-            
+        <img src="../img/foto_pre.png" class="imgRegis">
+            <input id="foto" type="file" name="foto">
         </div>
-        <div class="datos">
-            
-           
-           
-            <input id="alias" type="text" placeholder="Alias" name="alias"><br><br>
-            <input id="email" type="email" placeholder="Correo" name="correo"><br><br>
-            <input id="contraseña" type="password" placeholder="Contraseña" name="contraseña"><br><br>
-            <input id="repetir_contraseña" type="password" placeholder="Repetir contraseña" name="confirmar"><br><br>
-            <input id="crear" type="submit" name="crear" value="Crear usuario">
-            
-            
-        </div>
-    </center>  
+    </center> 
+        <div class="login">
+      <div class="login-triangle"></div>
+      
+      <h2 class="login-header">Registro</h2>
+
+          <form class="login-container">
+            <p><input id="alias" type="text" placeholder="alias" required="required"></p>
+            <p><input id="email" type="email" placeholder="e-mail" required="required"></p>
+            <p><input id="contraseña" type="password" placeholder="contraseña"></p>
+            <p><input id="repContraseña" type="password" placeholder="repetir contraseña"></p>
+            <p><input type="submit" value="Registrarte" id="btnEntrar"></p>
+            <p class="termyCond"><input type="checkbox">&nbsp&nbsp&nbsp He leído y acepto los términos y condiciones de uso.</p>
+          </form>
+      </div> 
     </body>
 </html>
