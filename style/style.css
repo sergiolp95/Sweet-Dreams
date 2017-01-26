@@ -225,6 +225,7 @@ a:hover{
 .imgRegis{
   width:150px;
   height:150px;
+  border-radius:75px;
 }
 div#archivo{
   position: relative;
@@ -246,8 +247,8 @@ input#foto{
   width: 100%;
   height: 100%;
   opacity: 0;
-  width:200px;
-  height:200px
+  width:150px;
+  height:150px;
 }
 .termyCond{
   color: #fff;
@@ -258,3 +259,8 @@ input#foto{
   transform: scale(1.5);
 
 }
+
+input#foto:hover{
+  cursor: pointer;
+}
+
