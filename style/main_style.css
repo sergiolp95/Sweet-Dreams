@@ -13,11 +13,11 @@ header{
     background: #85406C;
 }
 
-#btn-menu{
+#btn-menu{/*ocultamos el checkbox*/
     display: none;
 }
 
-header label{
+header label{/*atributos del boton desplegable del menu */
     display: none;
     width: 30px;
     height: 30px;
@@ -25,41 +25,42 @@ header label{
     border-right: 1px solid #fff;
 }
 
-header label:hover{
+header label:hover{/*atributos para cuando pasemos el cursor por encima del boton menu*/
     cursor: pinter;
     background: rgba(0,0,0,0.3);
 }
 
-.menu ul{
+.menu ul{/*atributos del listado del menu*/
     margin: 0;
-    list-style: none;
+    list-style: none;/*quitamos la colocacion por defecto del listado para que el menu no salga hacia abajo*/
     padding: 0;
-    display: flex;
+    display: flex;/*este atributo hace que los campos del menu sean felixibles y se adapten a la pantalla*/
 }
 
-.menu li{
+.menu li{/*atributos de los campos del boton (texto y contorno)*/
     text-align: center;
-    flex-grow: 1;
-    border-right: 1px solid white;
+    flex-grow: 1;/*hacemos que la barra del menú se extienda a todo el largo de la pantalla adaptandose a su tamaño*/
+    border-right: 1px solid white;/*pequeña linea que separa los campos del menú*/
 }
 
 .menu li:hover{
-    background: rgba(97, 35, 76, 0.6);
+    background: rgba(97, 35, 76, 0.6);/*color de los campos del menu cuando el cursor pasa por encima*/
 }
 
-.menu li a{
+.menu li a{/*formato del textos del menu*/
     display: block;
     padding: 15px 20px;
     color: white;
     text-decoration: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px){/*equivalente a un if en progrmacion, que se activa cuando la resolucion horizontal 
+    de la pantalla baja de 768px*/
     header label{
         display: block;
     }
 
-    .menu{
+    .menu{/*redefinimos la posicion del menu para cuando salga en vertical*/
         position: absolute;
         background: #85406C;
         width: 40%;
@@ -67,15 +68,16 @@ header label:hover{
         transition: all 0.5s;
     }
 
-    .menu ul {
+    .menu ul {/*el menu se muestra en forma de columna*/
         flex-direction: column;
     }
 
-    .menu li{
+    .menu li{/*margenes entre los campos del menu*/
         border-top: 1px solid white;
     }
 
-    #btn-menu:checked ~ .menu{
+    #btn-menu:checked ~ .menu{/*detectamos si el check oculto del boton del menu esta desactivado o no para en 
+        consecuencia desplegar menu o no*/
         margin: 0;
     }
 }
