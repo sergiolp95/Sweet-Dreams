@@ -39,7 +39,7 @@ z-index: 5;
     height: 30px;
     bottom: 75px;
     position: absolute;
-    z-index: 4;
+    z-index: 6;
 }
 
 #atras {
@@ -263,4 +263,14 @@ input#foto{
 }
 input#foto:hover{
   cursor: pointer;
+}
+.arrow{
+    top: 70px;
+    right: 38%;
+    position: absolute;
+    z-index: 6;
+}
+.arrow img{
+  width: 124px;
+  height: 75px;
 }
