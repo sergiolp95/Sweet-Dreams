@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../img/favicon.png"  type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="../style/style.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
         
     </head>
     <body>
@@ -23,7 +24,7 @@ and open the template in the editor.
         </a>
     <center>
         <div id="archivo" class="foto">
-        <img src="../img/foto_pre.png" class="imgRegis">
+        <img src="../img/foto_pre.png" class="imgRegis" id="imgAvatar">
             <input id="foto" type="file" name="foto">
         </div>
     </center> 
@@ -41,5 +42,43 @@ and open the template in the editor.
             <p><input type="submit" value="Registrarte" id="btnEntrar"></p>
           </form>
       </div> 
+      <script type="text/javascript">
+      
+      ////////////////FUNCION PARA CAMBIAR LA IMAGEN Y ANIMARLA//////////////////////
+/*
+          $('#foto').change( function(event) {
+            var tmppath = URL.createObjectURL(event.target.files[0]);
+            console.log (tmppath);
+            var url = $("#imgAvatar").attr('src');
+            $("#imgAvatar").fadeToggle("slow");
+            // sleep(200);
+            // $("#imgAvatar").attr('src',URL.createObjectURL(event.target.files[0]));
+            // $("#imgAvatar").fadeToggle("slow");
+            // sleep(1000);
+            $("#imgAvatar").fadeToggle("slow").attr('src',URL.createObjectURL(event.target.files[0]));
+            });*/
+
+          $("#foto").change(function(e) {
+                e.preventDefault();
+                $imgURL = URL.createObjectURL(event.target.files[0]);
+                $(".imgRegis")
+                    .fadeOut(400, function() {
+                        $(".imgRegis").attr('src',$imgURL);
+                    })
+                    .fadeIn(400);
+            });
+
+        ////////////////FUNCION SLEEP///////////////////
+
+          // function sleep(milliseconds) {
+          //     var start = new Date().getTime();
+          //     for (var i = 0; i < 1e7; i++) {
+          //       if ((new Date().getTime() - start) > milliseconds){
+          //         break;
+          //       }
+          //     }
+          //   }
+
+      </script>
     </body>
 </html>
