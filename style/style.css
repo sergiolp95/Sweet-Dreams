@@ -261,3 +261,6 @@ input#foto{
   transform: scale(1.5);
 
 }
+input#foto:hover{
+  cursor: pointer;
+}
