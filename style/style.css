@@ -248,8 +248,10 @@ input#foto{
   height: 100%;
   opacity: 0;
   width:150px;
-  height:150px
+  height:150px;
 }
+
+
 .termyCond{
   color: #fff;
   font-size: 17px;
@@ -259,3 +261,14 @@ input#foto{
   transform: scale(1.5);
 
 }
+<<<<<<< HEAD
+
+input#foto:hover{
+  cursor: pointer;
+}
+
+=======
+input#foto:hover{
+  cursor: pointer;
+}
+>>>>>>> master
