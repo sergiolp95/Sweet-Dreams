@@ -248,8 +248,10 @@ input#foto{
   height: 100%;
   opacity: 0;
   width:150px;
-  height:150px
+  height:150px;
 }
+
+
 .termyCond{
   color: #fff;
   font-size: 17px;
