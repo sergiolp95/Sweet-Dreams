@@ -72,7 +72,7 @@ header label:hover{/*atributos para cuando pasemos el cursor por encima del boto
     .menu{/*redefinimos la posicion del menu para cuando salga en vertical*/
         position: absolute;
         background: #85406C;
-        width: 25%;
+        width: 40%;
         margin-left: -70%;
         transition: all 0.5s;
     }
