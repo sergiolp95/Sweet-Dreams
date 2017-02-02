@@ -39,7 +39,7 @@ z-index: 5;
     height: 30px;
     bottom: 75px;
     position: absolute;
-    z-index: 4;
+    z-index: 6;
 }
 
 #atras {
@@ -261,14 +261,38 @@ input#foto{
   transform: scale(1.5);
 
 }
-<<<<<<< HEAD
-
 input#foto:hover{
   cursor: pointer;
 }
-
-=======
-input#foto:hover{
-  cursor: pointer;
+.arrow{
+    top: 70px;
+    right: 38%;
+    position: absolute;
+    z-index: 6;
 }
->>>>>>> master
+.arrow img{
+  width: 124px;
+  height: 75px;
+}
+
+.marco{
+
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  z-index: 5;
+  left: 25%;
+  right: 50%;
+  top: 10%;
+
+}
+
+.foto_pre{
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  right: 50%
+  top: 20%;
+}
