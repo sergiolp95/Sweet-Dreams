@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Perfil</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+		<link rel="icon" href="../img/favicon.png"  type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../style/style.css">
+	</head>
+	<body>
+	<img id="fondo" src="../img/fontWeb.png" alt="background image" />
+	<header>
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu"><img src="../img/icono_menu.png" alt=""></label>
+		<nav class="menu">
+			<ul>
+				<li><a href="main.html">Inicio</a></li>
+				<li><a href="">Perfil</a></li>
+				<li><a href="muro.html">Muro</a></li>
+				<li><a href="wiki.html">Wiki</a></li>
+				<li><a href="tienda.html">Tienda</a></li>
+				<li><a href="extras.html">Extras</a></li>
+			</ul>
+		</nav>
+		</header>
+
+		<!-- Boton Cerrar Sesion -->
+
+	<a href="../index.html"><div id="cerrarsesion"><div class="button btn2">Cerrar Sesión</div></div></a>
+
+		<!-- Perfil -->
+
+	<center>
+        <div id="archivo" class="foto">
+        <img src="../img/foto_pre.png" class="imgRegis" id="imgAvatar">
+            <input id="foto" type="file" name="foto">
+        </div>
+    </center> 
+
+		<table align = center>
+			
+			<thead>
+				<tr>
+					<th colspan = "2" id = "perfiltable"> <h1>Nombre Jugador </h1></th>
+				</tr>
+		
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td><img src = "img/" width = "350" height = "300"></a></td>
+					<td><img src = "img/" width = "350" height = "300"></a></td>
+				</tr>
+
+				<tr>
+					<td><img src = "img/" width = "350" height = "150"></a></td>
+					<td><img src = "img/" width = "350" height = "150"></a></td>
+				</tr>
+
+			</tbody>
+			
+	</table>
+
+	<script type="text/javascript">
+
+      ////////////////FUNCION PARA CAMBIAR LA IMAGEN Y ANIMARLA//////////////////////
+
+          $("#foto").change(function(e) {
+                e.preventDefault();
+                $imgURL = URL.createObjectURL(event.target.files[0]);
+                $(".imgRegis")
+                    .fadeOut(400, function() {
+                        $(".imgRegis").attr('src',$imgURL);
+                    })
+                    .fadeIn(400);
+            });
+      </script>
+	</body>
+</html>
