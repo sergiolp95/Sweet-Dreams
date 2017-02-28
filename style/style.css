@@ -24,7 +24,6 @@ z-index: 5;
 #btnEntrar { transition: all .2s ease-in-out; }
 #btnEntrar:hover{ transform: scale(1.05); }
 
-
 @font-face {
     font-family: "LuckiestGuy";
     src: url(../fonts/LuckiestGuy.ttf) format("truetype");
@@ -42,6 +41,17 @@ z-index: 5;
     z-index: 6;
 }
 
+#proto{
+    color: #FF7F00;
+    font-family: "LuckiestGuy";
+    font-size:20px;
+    margin-left: 4%;
+    width: 180px;
+    height: 30px;
+    position: absolute;
+    z-index: 4;
+}
+
 #atras {
     color: #8CE594;
     font-family: "LuckiestGuy";
@@ -52,6 +62,19 @@ z-index: 5;
     top: 20px;
     position: absolute;
     z-index: 4;
+}
+
+#cerrarsesion{
+color: #8CE594;
+font-family: "LuckiestGuy";
+font-size:19px;
+right: 10px;
+width: 200px;
+height: 30px;
+top: 50px;
+position: absolute;
+z-index: 4;
+
 }
 
 a:link {   
@@ -211,6 +234,9 @@ a:hover{
   width: 100%;
   left: 0;
 }
+.buttonC{
+  left: 1000;
+}
 .btn1:hover:after {
   top: calc(100% - 3px);
 }
@@ -261,9 +287,17 @@ input#foto{
   transform: scale(1.5);
 
 }
+
+
 input#foto:hover{
   cursor: pointer;
 }
+
+
+input#foto:hover{
+  cursor: pointer;
+}
+<<<<<<< HEAD
 .arrow{
     top: 70px;
     right: 38%;
@@ -296,3 +330,197 @@ input#foto:hover{
   right: 50%
   top: 20%;
 }
+=======
+
+
+
+/* CSS QUE HABIA EN EL MAIN_STYLE */
+
+
+@font-face {
+    font-family: "LuckiestGuy";
+    src: url(../fonts/LuckiestGuy.ttf) format("truetype");
+}
+
+body{
+    margin: 0;
+    font-family: "LuckiestGuy";
+}
+.logo{
+z-index: 5;
+
+}
+
+.imgRegis{
+  width:150px;
+  height:150px;
+  border-radius:75px;
+}
+
+input#foto{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  width:150px;
+  height:150px;
+}
+
+#fondo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#fondoNiveles
+{
+  width: 100%;
+  height: 170%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+#fondoObjetos
+{
+  width: 120%;
+  height: 270%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+#fondoEnemigos
+{
+  width: 100%;
+  height: 220%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+#titulin
+{
+    color: white;
+}
+
+
+header{
+    width: 100%;
+    background: #85406C;
+}
+
+#btn-menu{/*ocultamos el checkbox*/
+    display: none;
+}
+
+header label{/*atributos del boton desplegable del menu */
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover{/*atributos para cuando pasemos el cursor por encima del boton menu*/
+    cursor: pinter;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul{/*atributos del listado del menu*/
+    margin: 0;
+    list-style: none;/*quitamos la colocacion por defecto del listado para que el menu no salga hacia abajo*/
+    padding: 0;
+    display: flex;/*este atributo hace que los campos del menu sean felixibles y se adapten a la pantalla*/
+}
+
+.menu li{/*atributos de los campos del boton (texto y contorno)*/
+    text-align: center;
+    flex-grow: 1;/*hacemos que la barra del menú se extienda a todo el largo de la pantalla adaptandose a su tamaño*/
+    border-right: 1px solid white;/*pequeña linea que separa los campos del menú*/
+}
+
+.menu li:hover{
+    background: rgba(97, 35, 76, 0.6);/*color de los campos del menu cuando el cursor pasa por encima*/
+}
+
+.menu li a{/*formato del textos del menu*/
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+/* FUNCIONES PARA EL FUNCIONMIENTO DE LA EDICION DE LA FOTO DE PERFIL*/
+.imgRegis{
+  width:150px;
+  height:150px;
+  border-radius:75px;
+}
+div#archivo{
+  position: relative;
+  margin: 50px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  -webkit-border-radius:100%;
+  -webkit-box-shadow:0px 3px 0px #1a71a9; 
+}
+
+input#foto{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  width:150px;
+  height:150px;
+}
+@media (max-width: 768px){/*equivalente a un if en progrmacion, que se activa cuando la resolucion horizontal 
+    de la pantalla baja de 768px*/
+    header label{
+        display: block;
+    }
+
+    .menu{/*redefinimos la posicion del menu para cuando salga en vertical*/
+        position: absolute;
+        background: #85406C;
+        width: 40%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul {/*el menu se muestra en forma de columna*/
+        flex-direction: column;
+    }
+
+    .menu li{/*margenes entre los campos del menu*/
+        border-top: 1px solid white;
+
+    }
+
+    #btn-menu:checked ~ .menu{/*detectamos si el check oculto del boton del menu esta desactivado o no para en 
+        consecuencia desplegar menu o no*/
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+>>>>>>> master
