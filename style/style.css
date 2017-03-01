@@ -11,18 +11,25 @@ body{
   z-index: -1;
 }
 
+h1{
+  color: #FF7F00;
+}
+
 .logo{
 z-index: 5;
 
 }
 #usuario { transition: all .2s ease-in-out; }
-#usuario:hover{ transform: scale(1.1); }
+#usuario:hover { transform: scale(1.1); }
 
 #invitado { transition: all .2s ease-in-out; }
-#invitado:hover{ transform: scale(1.1); }
+#invitado:hover { transform: scale(1.1); }
 
 #btnEntrar { transition: all .2s ease-in-out; }
-#btnEntrar:hover{ transform: scale(1.05); }
+#btnEntrar:hover { transform: scale(1.05); }
+
+#btnCompra { transition: all .2s ease-in-out; }
+#btnCompra:hover { transform: scale(1.1); }
 
 @font-face {
     font-family: "LuckiestGuy";
@@ -83,9 +90,9 @@ a:link {
 a:visited {
 color: #FF7F00
 }
-a:hover{
+/*li:hover{
     font-size:23px;
-}
+}*/
 
 /************************LOGIN*******************************/
 .login {
