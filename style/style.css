@@ -1,5 +1,10 @@
 body{
-  overflow-y:hidden;
+  background-image: url("../img/fontWeb.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+
 }
 
 #fondo{
@@ -11,7 +16,7 @@ body{
   z-index: -1;
 }
 
-h1{
+h1, h2{
   color: #FF7F00;
 }
 
@@ -261,14 +266,14 @@ color: #FF7F00
   border-radius:75px;
 }
 div#archivo{
-  position: relative;
+  position: absolute;
   margin: 50px;
   padding: 10px;
-  width: 150px;
-  height: 150px;
+
   background-color: blue;
   -webkit-border-radius:100%;
   -webkit-box-shadow:0px 3px 0px #1a71a9; 
+  z-index: 2;
 }
 
 input#foto{
@@ -277,11 +282,10 @@ input#foto{
   left: 0px;
   right: 0px;
   bottom: 0px;
-  width: 100%;
-  height: 100%;
+
   opacity: 0;
-  width:150px;
-  height:150px;
+  
+  z-index: 3;
 }
 
 
@@ -440,14 +444,15 @@ header label:hover{/*atributos para cuando pasemos el cursor por encima del boto
   border-radius:75px;
 }
 div#archivo{
-  position: relative;
-  margin: 50px;
-  padding: 10px;
+  position: absolute;
+  top:120px;
+  right: 20%; 
   width: 150px;
   height: 150px;
   background-color: blue;
   -webkit-border-radius:100%;
-  -webkit-box-shadow:0px 3px 0px #1a71a9; 
+  -webkit-box-shadow:0px 3px 0px #1a71a9;
+  z-index: 4;
 }
 
 input#foto{
@@ -461,6 +466,7 @@ input#foto{
   opacity: 0;
   width:150px;
   height:150px;
+  z-index: 4;
 }
 @media (max-width: 768px){/*equivalente a un if en progrmacion, que se activa cuando la resolucion horizontal 
     de la pantalla baja de 768px*/
