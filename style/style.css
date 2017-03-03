@@ -20,6 +20,10 @@ h1, h2{
   color: #FF7F00;
 }
 
+h3{
+  color: #000000;
+}
+
 .logo{
 z-index: 5;
 
@@ -80,10 +84,10 @@ z-index: 5;
 color: #8CE594;
 font-family: "LuckiestGuy";
 font-size:19px;
-right: 10px;
+left:2%;
 width: 200px;
 height: 30px;
-top: 50px;
+top: 7%;
 position: absolute;
 z-index: 4;
 
@@ -498,7 +502,21 @@ input#foto{
 }
 
 
+.canvasHistoria{
+  z-index: -3;
+  position: absolute;
+  left: 10%;
+  top: 42%;
+}
 
+.historia{
+  text-align: center;
+}
+.abajo{
+  left: 20px;
+  z-index: 4;
+position: absolute;
+}
 
 
 
