@@ -513,9 +513,22 @@ input#foto{
   text-align: center;
 }
 .abajo{
-  left: 20px;
+  right: 20px;
   z-index: 4;
 position: absolute;
+}
+.izq{
+  left: 10%;
+  z-index: 4;
+  position: absolute;
+  bottom: 20px;
+}
+.dcha{
+  right: 10%;
+  z-index: 4;
+  position: absolute;
+  bottom: 20px;
+
 }
 
 
