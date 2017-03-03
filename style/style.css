@@ -530,6 +530,21 @@ position: absolute;
   bottom: 20px;
 
 }
+.fondoEnemigos{
+  background-color: #5D4E98;
+  border-radius: 35px;
+  border-style: solid;
+  border-color:  #D9F5D4;
+  border-width: 10px;
+}
+
+.fondoNiveles{
+  background-color: #D9F5D4;
+  border-radius: 35px;
+  border-style: solid;
+  border-color: #5D4E98;
+  border-width: 10px;
+}
 
 
 
