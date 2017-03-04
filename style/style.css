@@ -37,8 +37,8 @@ z-index: 5;
 #btnEntrar { transition: all .2s ease-in-out; }
 #btnEntrar:hover { transform: scale(1.05); }
 
-#btnCompra { transition: all .2s ease-in-out; }
-#btnCompra:hover { transform: scale(1.1); }
+#btnCompra { transition: all .2s ease-in-out; cursor: pointer;}
+#btnCompra:hover { transform: scale(1.1); cursor: pointer;}
 
 @font-face {
     font-family: "LuckiestGuy";
@@ -512,10 +512,33 @@ input#foto{
 .historia{
   text-align: center;
 }
-.abajo{
+.version{
   right: 20px;
   z-index: 4;
   position: absolute;
+
+}
+.pillowCount{
+  background-color: #5D4E98;
+  margin-top: 15px;
+  margin-right: 15px;
+  border-style: solid;
+  border-radius: 10px;
+  padding-right: 7px;
+  padding-left: 10px;
+  border-color: #D9F5D4; 
+  position: absolute;
+  z-index: 5;
+  right: 0px;
+
+}
+.pillowCount h3{
+  float: left;
+}
+.pillowCount img{
+  float: left;
+  margin-top: 6px;
+  margin-left: 5px;
 }
 .izq{
   left: 10%;
