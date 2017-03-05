@@ -582,8 +582,11 @@ input#foto{
 
 .pruebaCen{
   width: 930px;
-  margin-right: 0 auto;
-
+  margin: 0 auto;
+}
+.pruebaCen2 {
+    width: 620px;
+    margin: 0 auto;
 }
 
 
@@ -602,4 +605,110 @@ input#foto{
   margin-top:30px;
   padding-top:30px;
 }*/
+
+/********LAMPARAAAA***********/
+
+.lampara a {
+  color: #333;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  margin: 0px auto;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*$lamp: 300px;
+$cover: 200px;
+$cable: 200px;*/
+.lamp {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  margin: 0px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: center top;
+  animation-timing-function: cubic-bezier(.6, 0, .38, 1);
+  animation: move 5s infinite;
+  /* IE 10+, Fx 29+ */
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+.cable {
+  width: 4px;
+  height: 200px;
+  background: #85406C;
+}
+
+.cover {
+  width: 200px;
+  height: 80px;
+  background: #85406C;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: relative;
+  z-index: 200;
+}
+
+.in-cover {
+  width: 100%;
+  max-width: 200px;
+  height: 20px;
+  border-radius: 100%;
+  background: #AAA;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  bottom: -9px;
+  z-index: 100;
+  }
+  .in-cover .bulb {
+    width: 50px;
+    height: 50px;
+    background: #D9F5D4;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    margin: 0px auto;
+  }
+
+.light {
+  width: 200px;
+  height: 0px;
+  border-bottom: 900px solid rgba(100, 100, 100, 0.2);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 270px;
+  margin: 0px auto;
+  z-index: -1;
+}
+
+
+
+
+
 

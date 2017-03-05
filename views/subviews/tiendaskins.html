@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<title>Tienda Skins</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-		<link rel="icon" href="../../img/favicon.png"  type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="../../style/style.css">
-	</head>
-	<body>
+<head>
+	<title>Tienda Skins</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="icon" href="../../img/favicon.png"  type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.1.0/jquery-confirm.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.1.0/jquery-confirm.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
 	<!-- <img id="fondo" src="../../img/fontWeb.png" alt="background image" /> -->
 	<header>
 		<input type="checkbox" id="btn-menu">
@@ -22,34 +26,48 @@
 			</ul>
 		</nav>
 	</header>
-		<a href="../extras.html">
-			<div class="pillowCount" id="btnCompra">
-				<h3 id="titulin" >100</h3>
-				<img src = "../../img/proyectoPillow.png" width="50" height="35">
-			</div>
-		</a>
+	<a href="../extras.html">
+		<div class="pillowCount" id="btnCompra">
+			<h3 id="titulin" >100</h3>
+			<img src = "../../img/proyectoPillow.png" width="50" height="35">
+		</div>
+	</a>
 	<center>  
-        <div> 
-        <br><br>
-           <img src="../../img/skins.png" height="250" width="400" class="logo"><br>
-        </div>
-        
-		<h2>Skins</h2>
-        <br>
-        
+		<div> 
+			<br><br>
+			<img src="../../img/skins.png" height="250" width="400" class="logo"><br>
+		</div>
 
-				<hr size="3px" width="500px" noshade="noshade">
-				<br><br><br>
-					<a href=""><img src = "../../img/babySkin.png" width = "250" height = "300" id="btnCompra" class="fondoEnemigos marginAll">
-					</a>
-					<a href=""><img src = "../../img/noelSkin.png" width = "250" height = "300" id="btnCompra" class="fondoEnemigos marginAll">
-					</a>
-	</center> 
-				
-				
-			</tbody>
-			
-	</table>
+		<h2>Skins</h2>
+		<br>
+
+
+		<hr size="3px" width="500px" noshade="noshade">
+		<br><br><br>
+		<div class="pruebaCen2">
+			<div class="prueba" id="btnCompra" onclick="alerta('Baby Skin')"><img src = "../../img/babySkin.png" width = "250" height = "300" id="btnCompra" class="fondoEnemigos marginAll">
+			</div>
+			<div class="prueba" id="btnCompra" onclick="alerta('Noel Skin')"><img src = "../../img/noelSkin.png" width = "250" height = "300" id="btnCompra" class="fondoEnemigos marginAll">
+			</div>
+		</div>
+	</center>
 	<br><br>
-	</body>
+	<script type="text/javascript">
+      
+      ////////////////FUNCION PARA ALERTA//////////////////////
+      	function alerta (n){
+	        $.alert({
+	          	icon: 'fa fa-check',
+	          	type: 'green',
+	          	typeAnimated: true,
+	          	boxWidth: '30%',
+	          	useBootstrap: false,
+	            title: 'Compra realizada',
+	            content: '<br>¡La compra ha sido realizada con éxito!<br><br>Se ha añadido '+n+' a tu inventario'
+	      });
+  		}
+
+
+	</script>
+</body>
 </html>
