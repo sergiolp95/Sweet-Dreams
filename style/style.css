@@ -576,7 +576,22 @@ input#foto{
   border-color: #5D4E98;
   border-width: 10px;
 }
+.prueba{
+  float: left;
+}
 
+.pruebaCen{
+  width: 930px;
+  margin-right: 0 auto;
+
+}
+
+
+/*.ammoDes{
+  position: absolute;
+  top: 200px;
+  text-align: center;
+}*/
 
 /*.prueba {
   width:100%;

@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 		<link rel="icon" href="../../img/favicon.png"  type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="../../style/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.1.0/jquery-confirm.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.1.0/jquery-confirm.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
 	<!-- <img id="fondo" src="../../img/fontWeb.png" alt="background image" /> -->
@@ -40,26 +44,42 @@
 
 				<hr size="3px" width="500px" noshade="noshade">
 				<br><br><br>
-				<a href=""><img src = "../../img/Ammo1.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
-					</a>
-					<a href=""><img src = "../../img/Ammo2con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
-					</a>
-					<a href=""><img src = "../../img/Ammo3con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
-					</a>
-					<br>
-					<a href=""><img src = "../../img/Ammo4con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
-					</a>
-					<a href=""><img src = "../../img/Ammo5con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
-					</a>
-					<a href=""><img src = "../../img/Ammo6con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
-					</a>
+					<div class="pruebaCen">
+					<div class="prueba" id="btnCompra" onclick="alerta('Balas normales')"><img src = "../../img/Ammo1.png" width = "250" height = "250" class="fondoEnemigos marginAll">
+					</div>
+					<div class="prueba"><img src = "../../img/Ammo2con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
+					</div>
+					<div class="prueba"><img src = "../../img/Ammo3con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
+					</div>
+					
+					<div class="prueba"><img src = "../../img/Ammo4con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
+					</div>
+					<adiv class="prueba"><img src = "../../img/Ammo5con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
+					</div>
+					<div class="prueba"><img src = "../../img/Ammo6con.png" width = "250" height = "250" id="btnCompra" class="fondoEnemigos marginAll">
+					</div>
+					</div>
 
-	</center> 
+	</center>
+	
+	<script type="text/javascript">
+      
+      ////////////////FUNCION PARA ALERTA DE CONFIRMACIÓN//////////////////////
+      	function alerta (n){
+	        $.alert({
+	          	icon: 'fa fa-check',
+	          	type: 'green',
+	          	typeAnimated: true,
+	          	boxWidth: '30%',
+	          	useBootstrap: false,
+	            title: 'Compra realizada',
+	            content: '<br>¡Has realizado una compra de '+n+'!'
+	      });
+  		}
+
+
+	</script>		
 				
-				
-			</tbody>
-			
-	</table>
 	<br><br>
 	</body>
 </html>

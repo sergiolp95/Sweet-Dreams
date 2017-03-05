@@ -7,6 +7,10 @@
 		<link rel="icon" href="../img/favicon.png"  type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="../style/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.1.0/jquery-confirm.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.1.0/jquery-confirm.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 		
 	</head>
 	<body>
@@ -24,6 +28,10 @@
 			</ul>
 		</nav>
 		</header>
+        <a href="extras.html"><div class="pillowCount" id="btnCompra">
+            <h3 id="titulin" >100</h3>
+            <img src = "../img/proyectoPillow.png" width="50" height="35">
+        </div></a>
 		<center>  
         <div> 
         <br><br>
@@ -35,21 +43,64 @@
         
 		<h1>¡Ofertas!</h1>
 		<br>
-		<a href="" class="marginAll"><img src = "../img/5.png" width = "400" height = "220" id="btnCompra"></a>
-		<a href="" class="marginAll"><img src = "../img/15.png" width = "400" height = "220" id="btnCompra"></a>
-		<a href="" class="marginAll"><img src = "../img/30.png" width = "400" height = "220" id="btnCompra"></a>
+		<a class="marginAll" onclick="alerta('5','almohadas')"><img src = "../img/5.png" width = "400" height = "220" id="btnCompra"></a>
+		<a class="marginAll" onclick="alerta('15','almohadas')"><img src = "../img/15.png" width = "400" height = "220" id="btnCompra"></a>
+		<a class="marginAll" onclick="alerta('30','almohadas')"><img src = "../img/30.png" width = "400" height = "220" id="btnCompra"></a>
 		<br><br><br><br>
-		<a><img src = "../img/50.png" width = "700" height = "220" id="btnCompra"></a>
+		<a onclick="alerta('50','almohadas + skin')"><img src = "../img/50.png" width = "700" height = "220" id="btnCompra"></a>
 		</center>
-		<!-- <script type="text/javascript">
+		<script type="text/javascript">
       
       ////////////////FUNCION PARA ALERTA DE CONFIRMACIÓN//////////////////////
 
+    function alerta (n,m){
+        $.confirm({
+        	icon: 'fa fa-shopping-cart',
+        	boxWidth: '30%',
+        	useBootstrap: false,
+            title: 'Vas a realizar una compra',
+            content: '<br>¿Estás seguro de que quieres comprar '+n+' '+m+'?',
+            buttons: {
+                // No: function () {
+                //     $.alert('Compra cancelada');
+                // },
+                No: {
+                	icon: 'fa fa-times',
+                    text: 'No',
+                    btnClass: 'btn-red',
+                    keys: ['enter', 'shift'],
+                    action: function(){
+                        $.alert({
+                        		icon: 'fa fa-times',
+                        		type: 'red',
+                        		typeAnimated: true,
+                        		boxWidth: '30%',
+                        		useBootstrap: false,
+                        	    title: 'Compra cancelada',
+                        	    content: '<br>La compra ha sido cancelada con éxito'
+                        });
+                    }
+                },
+                Comprar: {
+                    text: 'Comprar',
+                    btnClass: 'btn-green',
+                    keys: ['enter', 'shift'],
+                    action: function(){
+                        $.alert({
+                        		icon: 'fa fa-check',
+                        		type: 'green',
+                        		typeAnimated: true,
+                        		boxWidth: '30%',
+                        		useBootstrap: false,
+                        	    title: 'Compra realizada',
+                        	    content: '<br>¡La compra ha sido realizada con éxito!<br><br>Se han añadido '+n+' '+m+' a tu inventario'
+                        });
+                    }
+                }
+            }
+        });
+    }
 
-          jConfirm('¿Estás seguro de querer realizar esta compra?', 'Confirmation Dialog', function(r) {
-          	jAlert('Confirmed: ' + r, 'Confirmation results');
-          });
-
-      </script> -->
+      </script>
 	</body>
 </html>
