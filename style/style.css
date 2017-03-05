@@ -696,7 +696,7 @@ $cable: 200px;*/
 .light {
   width: 200px;
   height: 0px;
-  border-bottom: 1000px solid rgba(100, 100, 100, 0.2);
+  border-bottom: 900px solid rgba(100, 100, 100, 0.2);
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   position: absolute;
@@ -707,8 +707,23 @@ $cable: 200px;*/
   z-index: -1;
 }
 
+.agente83{
+  background-color: red;
+  width: 600px;
+  height: 150px;
+  background-color: #5D4E98;
+  border-radius: 35px;
+  border-style: solid;
+  border-color:  #D9F5D4;
+  border-width: 10px;
+  font-size: 19px;
+  color: #ffffff;
 
-
+}
+.abajoDcha{
+  margin-top: 40px;
+  margin-left: 30px;
+}
 
 
 
